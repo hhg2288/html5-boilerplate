@@ -15,7 +15,6 @@
   <title></title>
   <meta name="description" content="">
   <meta name="author" content="">
-  szlvasdlfasd;zsodciaydco
 
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,6 +22,12 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Feel free to split the CSS into separate files, if you like. -->
+  <link rel="stylesheet" href="css/GGS.css"/> 
+    
+  <!-- Here's Golden Gridlet, the grid overlay script. -->
+  <script src="js/GGS.js"></script>
   
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -33,45 +38,64 @@
 </head>
 
 <body>
-  <header>
+    
+    <!-- Demo code begins -->
+    
+    <header>
+    	<div class="wrapper">
+    		<h1>A Golden Demonstration</h1>
+    		<h2>
+    			Try resizing your browser or viewing this page on different devices. Use the icon in the upper right corner to see an overlay of the grid.
+    		</h2>
+    	</div>
+    </header>
+    
+    <article id="twoway">
+    	<section class="wrapper">
+    		<h3>A two-way split</h3>
+    		<p>
+    			These two blocks of text will float side by side with some empty columns on the sides on large screens. On medium-sized screens the empty columns will disappear, and on small screens the blocks will be stacked vertically.
+    		</p>
+    	</section>
+    	<section class="wrapper">
+    		<h3>By the way</h3>
+    		<p>
+    			If you're viewing this page on an iOS device, it might zoom in wonkily when you rotate your device. This is because of <a href="http://filamentgroup.com/examples/iosScaleBug/">a Mobile Safari bug</a>.
+    		</p>
+    	</section>
+    </article>
+    
+    <!-- Demo code ends -->
 
-  </header>
-  <div role="main">
 
-  </div>
-  <footer>
-
-  </footer>
-
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via build script -->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts -->
-
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
-  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 7 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+  	<!-- JavaScript at the bottom for fast page loading -->
+  	
+  	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.4.min.js"><\/script>')</script>
+  	
+  	
+  	<!-- scripts concatenated and minified via build script -->
+  	<script defer src="js/plugins.js"></script>
+  	<script defer src="js/script.js"></script>
+  	<!-- end scripts -->
+  	
+  	
+  	<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+  	     mathiasbynens.be/notes/async-analytics-snippet -->
+  	<script>
+  	  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
+  	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  	  s.parentNode.insertBefore(g,s)}(document,'script'));
+  	</script>
+  	
+  	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+  	     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  	<!--[if lt IE 7 ]>
+  	  <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  	  <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  	<![endif]-->
 
 </body>
 </html>
